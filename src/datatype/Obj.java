@@ -6,7 +6,7 @@ class Mobile{
     int camera=67;
 
     public void takingpic(){
-        if(camera<=90) {
+        if(camera<=100) {
             System.out.println("Taking Selfie with " + camera + "px camera iphone");
         }
         else{
