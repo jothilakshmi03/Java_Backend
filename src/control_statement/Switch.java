@@ -2,7 +2,7 @@ package control_statement;
 
 public class Switch {
     public static void main(String[]args){
-        int days=4;
+        int days=8;
         switch (days){
             case 1:
                 System.out.println("Monday");
@@ -24,6 +24,9 @@ public class Switch {
                 break;
             case 7:
                 System.out.println("sunday");
+                break;
+            default:
+                System.out.println("enter valid day");
 
         }
     }
