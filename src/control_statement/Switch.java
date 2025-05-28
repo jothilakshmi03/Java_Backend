@@ -22,7 +22,7 @@ public class Switch {
             case 6:
                 System.out.println("saturday");
                 break;
-            case 7:
+            case 7,8:
                 System.out.println("sunday");
                 break;
             default:
