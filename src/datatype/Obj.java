@@ -1,12 +1,29 @@
 package datatype;
 
+// class created by me
+
+class Mobile{
+    int camera=67;
+
+    public void takingpic(){
+        if(camera<=90) {
+            System.out.println("Taking Selfie with " + camera + "px camera iphone");
+        }
+        else{
+            System.out.println("Taking Selfie with " + camera + "px camera samsung");
+        }
+    }
+}
+
 public class Obj {
     public static void main(String[]args) {
-        int age = 21;
-        System.out.println(age);
-    }
-        public void add(int num1,int num2){
-            System.out.println(num1+num2);
+         Mobile iphone=new Mobile();
+         iphone.camera=90;
+         iphone.takingpic();
+
+         Mobile samsung=new Mobile();
+         samsung.camera=180;
+         samsung.takingpic();
 
         }
     }
