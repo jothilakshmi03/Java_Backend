@@ -2,6 +2,10 @@ package datatype;
 
 // class created by me
 
+import method1.Method1;
+
+import static method1.Method1.example;
+
 class Mobile{
     int camera=67;
 
@@ -24,6 +28,10 @@ public class Obj {
          Mobile samsung=new Mobile();
          samsung.camera=180;
          samsung.takingpic();
+
+         example();
+         Method1 obj=new Method1();
+         obj.instanceMethod();
 
         }
     }
