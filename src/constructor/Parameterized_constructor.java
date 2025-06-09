@@ -1,7 +1,7 @@
 package constructor;
 
 class IndianStates{
-    public String state;
+    public String state;  //global variable
     public float area;
 
     public void displaystates(){
