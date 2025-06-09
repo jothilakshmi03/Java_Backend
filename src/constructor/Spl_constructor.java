@@ -13,9 +13,22 @@ class Application_form{
 
 public class Spl_constructor {
     public static void main(String[]args){
-         Application_form stu1=new Application_form();
-         stu1.name="Jyothilakshmi";
-         stu1.col_name="Besant";
-         stu1.printdetails();
+//         Application_form stu1=new Application_form();
+//         stu1.name="Jyothilakshmi";
+//         stu1.col_name="Besant";
+//         stu1.printdetails();
+
+        Application_form stu2=new Application_form();
+        stu2.name="Jayasri";
+        stu2.col_name="vcodez";
+        stu2.printdetails();
+
+        Application_form stu1=new Application_form();
+        stu1.name="Jyothilakshmi";
+        stu1.col_name="besant";
+        stu1.printdetails();
+        stu2.printdetails();
+
+
     }
 }
