@@ -26,6 +26,12 @@ class African_elephant extends  Elephant{
     public void sleep(){
         System.out.println("it is sleeping");
     }
+
+    @Override  //annotations
+
+    public void eat(){ // Method overriding - same method name and same return type(void)
+        System.out.println("the african elephant is eating banana");
+    }
 }
 
 public class Multiple_inheritance {
