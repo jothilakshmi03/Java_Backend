@@ -4,7 +4,7 @@ public class Non_repeating_char {
     public static void main(String[]args){
         String str="abcdabcd";
         String str2="%%$$@";
-        String str3=" abcabc";
+        String str3="Aa";
         System.out.println(firstChar(str));
         System.out.println(firstChar(str2));
         System.out.println(firstChar(str3));
