@@ -23,5 +23,7 @@ public class ListCollection {
         // acess element from the list
 
         System.out.println(list.get(2));
+        list.set(3,"element56");
+        System.out.println(list);
     }
 }
