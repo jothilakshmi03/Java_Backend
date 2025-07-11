@@ -16,7 +16,7 @@ public class Custom_exceptionhandling{
     }
     public static void main(String[] args) {
         try {
-            checkAge(14);
+            checkAge(12);
         }catch (InvalidAgeException e){
             System.out.println(e.getMessage());
         }
