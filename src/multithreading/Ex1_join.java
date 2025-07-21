@@ -11,11 +11,12 @@ class join1 extends  Thread{
         }catch (InterruptedException e){
             System.out.println(e);
         }
-        System.out.println("Thread a finished "+getName());
+        System.out.println("Thread a finished : "+getName());
     }
 }
 class join2 extends Thread{
-    Thread jointhread;
+    Thread jointhread; // this thread represents the datatype
+
     public join2(Thread jointhread){
         this.jointhread=jointhread;
     }
@@ -24,13 +25,13 @@ class join2 extends Thread{
         System.out.println("thread b is started : "+getName());
         try {
             System.out.println("thread b is started : "+getName());
-            System.out.println("thread b is waiting for thread a : "+jointhread.getName());
-            jointhread.join();
+            System.out.println("thread b is waiting for thread a");
+            jointhread.join();  //t.join (meaning)
             System.out.println("thread b is resumed");
         }catch (InterruptedException e){
             System.out.println(e);
         }
-        System.out.println("thread a finished "+getName());
+        System.out.println("thread b finished "+getName());
     }
 
 }
@@ -44,5 +45,7 @@ public class Ex1_join {
           t1.setName("thread b");
           t.start();
           t1.start();
+
+        System.out.println("main thread is running");
     }
 }
