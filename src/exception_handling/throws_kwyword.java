@@ -8,7 +8,7 @@ public class throws_kwyword {
             System.out.println(e);
         }
     }
-    public static void  divide(int a,int b)throws ArithmeticException{
+    public static void  divide(int a,int b)throws ArithmeticException{   //method signature
         System.out.println("Result : "+(a/b));
         System.out.println("hi");
     }
