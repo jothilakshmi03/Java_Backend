@@ -10,6 +10,10 @@ import java.util.concurrent.Executors;
 public class Thread_pool {
     public static void main(String[] args) {
         ExecutorService executor= Executors.newFixedThreadPool(3);
+        ExecutorService executor1= Executors.newSingleThreadExecutor();  //only one thread created
+        ExecutorService executor2= Executors.newCachedThreadPool();
+
+
         for(int i=1;i<=7;i++){
             Runnable task=new workerTask("task : "+i);
             executor.execute(task);
