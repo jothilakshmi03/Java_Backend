@@ -19,5 +19,9 @@ public class Map_java {
         System.out.println(name.containsValue("arul"));
         System.out.println(name.keySet());
         System.out.println(name.entrySet());
+
+        for (Map.Entry<Integer,String>entry:name.entrySet()){
+            System.out.println(entry.getKey()+" is "+entry.getValue());
+        }
     }
 }
