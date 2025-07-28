@@ -17,5 +17,7 @@ public class Map_java {
         name.replace(3,"arul","guru");
         System.out.println(name);
         System.out.println(name.containsValue("arul"));
+        System.out.println(name.keySet());
+        System.out.println(name.entrySet());
     }
 }
