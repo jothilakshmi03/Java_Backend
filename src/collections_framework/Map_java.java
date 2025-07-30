@@ -23,5 +23,8 @@ public class Map_java {
         for (Map.Entry<Integer,String>entry:name.entrySet()){
             System.out.println(entry.getKey()+" is "+entry.getValue());
         }
+        for (Integer map:name.keySet()){
+            System.out.println("key : "+map+" "+name.get(map));
+        }
     }
 }
