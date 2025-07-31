@@ -24,7 +24,7 @@ class FeedBack{
 
         } catch (IOException e) {
             System.out.println("An error occurred while saving feedback.");
-            e.printStackTrace();
+//            e.printStackTrace();
         }
     }
 
@@ -32,7 +32,6 @@ class FeedBack{
 
 public class FeedBackManager {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
         FeedBack.submitFeedback("jothi","fdsgyfgusgusz");
     }
 }
