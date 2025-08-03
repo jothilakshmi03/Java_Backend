@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.OptionalDouble;
+import java.util.stream.Collectors;
 
 public class Stream_ex {
     public static void main(String[] args) {
@@ -40,6 +41,11 @@ public class Stream_ex {
 //                .map(fru->fru.toUpperCase())
                 .map(String::toUpperCase)
                 .forEach(System.out::println);
+
+
+// greater num in a list
+        List<Integer> greater=nums.stream().filter(num->num>50).collect(Collectors.toList());
+        System.out.println(greater);
     }
 
 }
