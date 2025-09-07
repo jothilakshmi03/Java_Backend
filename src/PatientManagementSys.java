@@ -30,13 +30,13 @@ public class PatientManagementSys {
                     Patient.deletePatient();
                     break;
                 case 5:
-                    System.out.println("Exiting....");
+                    System.out.println("Exiting....Goodbye!!");
                     break;
                 default:
                     System.out.println("invalid choice");
             }
         }
-        while (choice != 6);
+        while (choice != 5);
 
     }
 }
@@ -129,6 +129,7 @@ class Patient {
                 p.setName(scan.nextLine());
                 System.out.println("Enter new Age: ");
                 p.setAge(scan.nextInt());
+                scan.nextLine();
                 System.out.println("Enter the new Disease: ");
                 p.setDisease(scan.nextLine());
                 System.out.println("Patient details updated Successfully");
@@ -141,17 +142,17 @@ class Patient {
     }
     public static void deletePatient(){
         System.out.println("Enter patient id to delete: ");
-        int id=scan.nextInt();
-        for(Patient p: PatientManagementSys.patients){
-            if(p.getId()==id){
-                PatientManagementSys.patients.remove(p);
-                System.out.println("patient details deleted successfully");
-            }else {
-                System.out.println("patient not found");
-            }
-        }
+        int id = scan.nextInt();
 
+        boolean removed = PatientManagementSys.patients.removeIf(p -> p.getId() == id);
+
+        if(removed){
+            System.out.println("Patient details deleted successfully");
+        } else {
+            System.out.println("Patient not found");
+        }
     }
+
 }
 
 
