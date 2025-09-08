@@ -42,10 +42,10 @@ public class PatientManagementSys {
 }
 
 class Patient {
-    private String name;
-    private int id;
-    private String disease;
-    private int age;
+    private static String name;
+    private static int id;
+    private static String disease;
+    private static int age;
     static Scanner scan = new Scanner(System.in);
 
 
@@ -87,10 +87,10 @@ class Patient {
         this.age = age;
     }
 
-    @Override
-    public String toString(){
-        return "Patient Id : "+id+", Patient Name : "+name+", Name of the Disease : "+disease+", Patient Age : "+age;
-    }
+//    @Override
+//    public String toString(){
+//        return "Patient Id : "+id+", Patient Name : "+name+", Name of the Disease : "+disease+", Patient Age : "+age;
+//    }
  // methods
     public static void addPatient(){
         System.out.println("Enter id number: ");
@@ -117,6 +117,7 @@ class Patient {
             for(Patient p: PatientManagementSys.patients){
                 System.out.println(p);
             }
+            System.out.println("Patient Id : "+id+", Patient Name : "+name+", Name of the Disease : "+disease+", Patient Age : "+age);
         }
     }
     public static void updatePatient(){
